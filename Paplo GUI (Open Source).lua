@@ -34,9 +34,6 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("README")
-
-local Label = Window:CreateLabel("WARNING : All the effects are permanent untill i figure out how to fix it.") 
 
 local Tab = Window:CreateTab("ESP") -- Title, Image
 
