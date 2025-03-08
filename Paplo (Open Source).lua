@@ -34,6 +34,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+
 local Tab = Window:CreateTab("ESP") -- Title, Image
 
 local Section = Tab:CreateSection("It's over, i just got wallhacks!")
@@ -367,6 +368,7 @@ end)
    end,
 })
 
+
 local Tab = Window:CreateTab("Gen") 
 
 local Button = Tab:CreateButton({
@@ -433,6 +435,7 @@ local Input = Tab:CreateInput({
         end
     end,
 })
+
 
 local Tab = Window:CreateTab("Aimbot")
 
@@ -755,6 +758,7 @@ end
 shootButton.Activated:Connect(onShootButtonPressed)
    end,
 })
+
 
 local Tab = Window:CreateTab("Misc")
 
