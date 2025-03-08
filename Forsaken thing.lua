@@ -2,8 +2,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Paplo Forsaken",
-   Icon = 99972211610543, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Paplo Forsaken Script is Loading",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Paplo Forsaken Script Very Op",
    LoadingSubtitle = "Loading..",
    Theme = "AmberGlow", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -22,10 +22,10 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = false, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "Paplo Keysystem",
-      Subtitle = "Join Discord",
+      Subtitle = "Join Discord (Later)",
       Note = "No key as of now, password is key", -- Use this to tell the user how to get a key
       FileName = "PaploKey", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
@@ -34,9 +34,9 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Main", 101314838915929) -- Title, Image
+local Tab = Window:CreateTab("Main") -- Title, Image
 
-local Section = Tab:CreateSection("Esp")
+local Section = Tab:CreateSection("ESP (Visibility)")
 
 local Button = Tab:CreateButton({
    Name = "Killer Esp ",
@@ -45,7 +45,7 @@ Rayfield:Notify({
    Title = "Killer esp Activated.",
    Content = "The killer is Now highlighted, Watch out for them🤨",
    Duration = 2,
-   Image = 95344475479538,
+   Image = 0,
 })
 
 local Players = game.Workspace:WaitForChild("Players")
@@ -126,7 +126,7 @@ local Button = Tab:CreateButton({
    Title = "Generator Esp Activated.",
    Content = "Generator Highlighted, Fix em while you can :)",
    Duration = 2,
-   Image = 4483362458,
+   Image = 0,
 })
    local function createOutline(item)
     local Highlight = Instance.new('Highlight')
@@ -162,7 +162,7 @@ local Button = Tab:CreateButton({
             Title = "Player Esp Activated.",
             Content = "All players highlighted.",
             Duration = 2,
-            Image = 4483362458,
+            Image = 0,
         })
         local PlayersService = game:GetService("Players")
 
@@ -280,7 +280,7 @@ local Button = Tab:CreateButton({
    Title = "Esp Items Is Activated.",
    Content = "Items highlighted, Go take some💊",
    Duration = 3,
-   Image = 4483362458,
+   Image = 0,
 })
    local Workspace = game:GetService("Workspace")
 
@@ -376,7 +376,7 @@ local Button = Tab:CreateButton({
    Title = "Fullbright Is Activated.",
    Content = "Everything is Now Pretty Visible, Hooray!",
    Duration = 3,
-   Image = 4483362458,
+   Image = 0,
 })
 game:GetService("Lighting").Brightness = 0.7
 game:GetService("Lighting").Ambient = Color3.new(0.75, 0.75, 0.75)
@@ -393,7 +393,7 @@ local Button = Tab:CreateButton({
             Title = "Slowness Effect Removed.",
             Content = " ",
             Duration = 6.5,
-            Image = 4483362458,
+            Image = 0,
         })
         game:GetService("ReplicatedStorage").Modules.StatusEffects.Slowness:Destroy()
     end,
@@ -406,7 +406,7 @@ local Button = Tab:CreateButton({
    Title = "Blindness effect Removed.",
    Content = " ",
    Duration = 3,
-   Image = 4483362458,
+   Image = 0,
 })
    game:GetService("ReplicatedStorage").Modules.StatusEffects.Blindness:Destroy()
    end,
@@ -558,7 +558,7 @@ local Input = Tab:CreateInput({
     end,
 })
 
-local Tab = Window:CreateTab("Aimbot", 121171162573412)
+local Tab = Window:CreateTab("Aimbot")
 
 local Button = Tab:CreateButton({
    Name = "Aimbot Mass-infection",
@@ -567,7 +567,7 @@ local Button = Tab:CreateButton({
    Title = "Aimbot Mass-infection Activated",
    Content = "Use 1x1x1x1 For this to Function correctly.",
    Duration = 3,
-   Image = 4483362458,
+   Image = 0,
 })
    local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -631,7 +631,7 @@ local Button = Tab:CreateButton({
    Title = "Aimbot Entanglement Is Activated.",
    Content = "Use 1x1x1x1 For this to Function correctly, skill issue tbh😔",
    Duration = 3,
-   Image = 4483362458,
+   Image = 0,
 })
    local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -695,7 +695,7 @@ local Button = Tab:CreateButton({
    Title = "Dusekkar Aimbot Is Activated.",
    Content = "Use Dusekkar for this to work, Snipe em! (Dont use in lobby, doesnt work.)",
    Duration = 3,
-   Image = 4483362458,
+   Image = 0,
 })
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -825,7 +825,7 @@ local Button = Tab:CreateButton({
    Title = "Chance Aimbot Is Activated.",
    Content = "Use chance for This to work, Obviously🤨",
    Duration = 2,
-   Image = 4483362458,
+   Image = 0,
 })
 
    local player = game.Players.LocalPlayer
@@ -880,7 +880,11 @@ shootButton.Activated:Connect(onShootButtonPressed)
    end,
 })
 
-local Tab = Window:CreateTab("Credits", 92658304210178)
+local Tab = Window:CreateTab("Misc")
 
-local Label = Tab:CreateLabel("Credit to uhh i forgor💀💀💀", 4483362458, Color3.fromRGB(90, 90, 90), false) -- Title, Icon, Color, IgnoreTheme
+local Label = Tab:CreateLabel("WIP")
+
+local Tab = Window:CreateTab("Credits")
+
+local Label = Tab:CreateLabel("Credit to uhh i forgor💀💀💀", 0, Color3.fromRGB(90, 90, 90), false) -- Title, Icon, Color, IgnoreTheme
 
