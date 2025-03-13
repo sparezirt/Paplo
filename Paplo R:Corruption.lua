@@ -11,8 +11,8 @@ local Window = Rayfield:CreateWindow({
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
 
    ConfigurationSaving = {
-      Enabled = false,
-      FolderName = nil, -- Create a custom folder for your hub/game
+      Enabled = true, 
+      FolderName = Robloxia:Corruption, -- Create a custom folder for your hub/game
       FileName = "IgnoreThis"
    },
 
@@ -69,3 +69,5 @@ Local Tab = Window:CreateTab("Speed")
 Local Section = Tab:CreateSection("Speed options")
 
 Local Label = Tab:CreateLabel("WIP", 0, Color3.fromRGB(90, 90, 90), false)
+
+Rayfield:LoadConfiguration()
